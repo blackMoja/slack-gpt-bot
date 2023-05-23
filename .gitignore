@@ -1,0 +1,44 @@
+#Pakage modules
+node_modules/
+bower_components/
+yarn.lock
+npm-debug.log
+
+#Temp
+.sass-cache/
+.tmp/
+.idea/
+
+#Built Files
+dist/
+doc/
+storybook-static/
+#dist-back/
+
+#Log Files
+*.log
+
+#OSX
+.DS_Store
+
+#IDE
+.vscode/
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/config.yml
+!.elasticbeanstalk/*.global.yml
+
+# Local SSH Key
+ssl/*.pem
+
+# Static JSON
+src/assets/indicator/*
+
+# Development setting
+.env.dev
+.env.development
+ecosystem.dev.config.js
+
+# git, husky personal custom hook
+.husky/post-checkout
