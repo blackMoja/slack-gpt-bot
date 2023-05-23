@@ -36,6 +36,7 @@ ssl/*.pem
 src/assets/indicator/*
 
 # Development setting
+.env
 .env.dev
 .env.development
 ecosystem.dev.config.js
