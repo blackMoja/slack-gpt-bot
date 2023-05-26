@@ -4,10 +4,9 @@ const express = require('express');
 const { WebClient } = require('@slack/web-api');
 const { createEventAdapter } = require('@slack/events-api');
 const { createServer } = require('http');
-const { Configuration, OpenAIApi } = require('openai');
 
 const app = express();
-const webClient = new WebClient(process.env.SLACK_BOT_TOKEN);
+const webClient = new WebClient(process.env.SLACK_BOT_USER_AUTH_TOKEN);
 const slackEvents = createEventAdapter(process.env.SLACK_SIGNING_SECRET);
 
 slackEvents.on('message', async (event) => {
