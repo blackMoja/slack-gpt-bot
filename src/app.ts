@@ -1,9 +1,10 @@
-require('dotenv').config();
+import express from 'express';
+import { WebClient } from '@slack/web-api';
+import { createEventAdapter } from '@slack/events-api';
+import { createServer } from 'http';
+import * as dotenv from 'dotenv';
 
-const express = require('express');
-const { WebClient } = require('@slack/web-api');
-const { createEventAdapter } = require('@slack/events-api');
-const { createServer } = require('http');
+dotenv.config();
 
 const app = express();
 const webClient = new WebClient(process.env.SLACK_BOT_USER_AUTH_TOKEN);
